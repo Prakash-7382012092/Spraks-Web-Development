@@ -1,0 +1,321 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Original Surfer', cursive;
+}
+nav{
+    position: absolute;
+    width:100%;
+    height:75px;
+    background-color:aquamarine;
+    line-height: 75px;
+    padding:0px 100px;
+    position:fixed;
+    z-index:1;
+}
+nav .logo{
+    font-size:30px;
+}
+nav .logo{
+
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+}
+nav .logo p{
+    float:left;
+    color:tomato;
+}
+nav ul{
+    float:right;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    position: relative;
+    top:-70px;    
+}
+nav ul li a{
+    color:green;
+    text-decoration: none;
+    font-size:20px;
+    padding:0 30px;
+}
+nav ul li a:hover{
+    color:blue;
+}
+nav ul li .active{
+    color:orangered;
+}
+.image img{
+    width:100%;
+    height:718px;
+}
+.carousel-item img{
+    height:720px;
+}
+section{
+    background-image:url('../images/6.jpg');
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g{
+	color:white;
+	text-align: center;
+/*	margin-top: 50px;*/
+	animation:ef 10s; 
+}
+.h{
+	color:green;
+	text-align: center;
+/*	margin-top: 30px;*/
+	animation-delay: 5s;
+	animation:gh 10s; 
+}
+
+.v{
+	color:green;
+	text-align: center;
+	margin-top: 50px;
+	animation:abcd 10s; 
+    
+}
+
+@keyframes abcd{
+1%{margin-right: 2550px}
+100%{margin-left:150px}
+/*10%{margin-left: 800px}
+20%{margin-left: 150px}
+30%{margin-left: -250px}
+40%{margin-left: 200px}
+50%{margin-left: -250px}
+60%{margin-left: 250px}
+70%{margin-left: -250px}
+80%{margin-left: 450px}
+90%{margin-left: 100px}*/
+}
+@keyframes ef{
+1%{margin-left: 2550px}
+100%{margin-right:150px}
+}
+/*@keyframes ef{
+	1%{margin-top: 2550px}
+100%{margin-bottom: 450px}
+}*/
+@keyframes gh{
+1%{margin-right: 2550px}
+100%{margin-left:150px}
+}
+
+.l{
+	margin-left: 750px;
+	margin-top: 10px;
+	font-size:20px;
+	padding: 5px 10px;
+	background: green;
+	color: white;
+	box-shadow: 3px 3px 3px 3px yellow;
+	box-shadow:3px green;
+	border-radius: 10px;
+
+}
+.l:hover{
+	background-color: blue;
+	color:yellow;
+}
+
+
+@keyframes ef{
+	1%{margin-top: 2550px}
+100%{margin-bottom: 450px}
+}
+#txt{
+	margin-left: 650px;
+
+}
+.center{
+opacity: 0.9;
+	width: 320px;
+	height:420px;
+	background-color:#000;
+	color:orange;
+	position:absolute; /*its position is absolute that's why it is coming instead of here why not you showing registered successfull in alert if you will remove this position:absolute then your ui will be affected*/
+	transform:translate(-50%,-50%);
+	left:50%;
+	top:50%;
+	padding:20px 30px;
+	box-sizing: border-box;
+	border-radius:10px;
+	box-shadow:0 0 10px yellow, inset 0 0 20px green;
+}
+.cent h2,h3,p,h1{
+	/* margin-top: 30px; */
+	color:greenyellow;
+	margin:0;
+	padding:0;
+}
+.cent{
+opacity: 0.9;
+	width: 320px;
+	height:420px;
+	background-color:lightcoral;
+	color:orange;
+	position:absolute; /*its position is absolute that's why it is coming instead of here why not you showing registered successfull in alert if you will remove this position:absolute then your ui will be affected*/
+	transform:translate(-50%,-50%);
+	left:50%;
+	top:45%;
+	padding:20px 30px;
+	box-sizing: border-box;
+	border-radius:10px;
+	box-shadow:0 0 10px yellow, inset 0 0 20px green;
+}
+.avatar{
+	width:100px;
+	height:100px;
+	border-radius:10px;
+	position:absolute;
+	top:-50px;
+	left:calc(50% - 50px);
+	opacity:1;
+	box-shadow:0 0 10px yellow, inset 0 0 20px green;
+}
+.avata{
+	width:100px;
+	height:100px;
+	border-radius:10px;
+	position:absolute;
+	top:+10px;
+	left:calc(50% - 50px);
+	opacity:1;
+	box-shadow:0 0 10px yellow, inset 0 0 20px green;
+}
+.center h1{
+	text-align: center;
+	padding:0px 0px 0 0px;
+    margin-top:45px;
+    font-size:30px;
+}
+.center form {
+	position: relative;
+	padding:0 10px;
+	box-sizing:border-box;
+	
+}
+#ab{
+	margin-top:1px;
+}
+form .txt_field{
+	position: relative;
+	border-bottom:2px solid #adadad; /*i don't know why it is diplaying like thissee it is there any display flex you have applied*/
+	margin:30px 0;
+
+}
+.txt_field input{
+	width:100%;
+	padding:0 0px;
+	right: 2px;
+	height:20px;
+	font-size:16px;
+    color:white;
+	border:none;
+	background:none;
+	outline:none;
+}
+.txt_field label{
+	position: absolute;
+	top:50%;
+	left:5px;
+	color:green;
+	transform:translateY(-50%);
+	font-size:16px;
+	pointer-events: none;
+	transition: all 0.5s linear;
+}
+.txt_field span::before{
+	content:'';
+position:absolute;
+top:25px;
+left:0;
+width:100%;
+height:2px;
+background:#2691d9;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+	top:-8px;
+	background: transparent;
+	font-size:14px;
+	left:-5px;
+}
+input[type="submit"]{
+	border:none;
+	outline:none;
+	padding-top: 10px;
+	height:40px;
+	width:100%;
+
+	background-color: green;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+	transition: 0.4s ease;
+}
+input[type="submit"]:hover{
+	cursor:pointer;
+	background-color: #ffc107;
+	color:#000;
+}
+.pass{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.signup_link a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 25px;
+	color:darkgrey;
+	transition: 0.4s ease;
+	text-align: center;
+}
+.box a:hover{
+	color:#ffc107;
+}
+.cla{
+    position:absolute;
+	width:100%;
+	bottom:100px; 
+	background:#000; ;
+}
+.row{
+   width:80%;
+    padding-top:100px;
+    padding-left: 500px;
+}
+footer{
+width:100%;
+height:100px;
+background-color:aqua
+}
+.cente{
+opacity: 0.9;
+	width: 100%;
+	height:100px;
+	background-color:aqua;
+	color:orange;
+	position:absolute; /*its position is absolute that's why it is coming instead of here why not you showing registered successfull in alert if you will remove this position:absolute then your ui will be affected*/
+	transform:translate(-50%,-50%);
+	left:50%;
+	bottom:-6%;
+	padding:20px 30px;
+	box-sizing: border-box;
+	border-radius:10px;
+	box-shadow:0 0 10px yellow, inset 0 0 20px green;
+}
+.cente h1,p{
+	text-align: center;
+	color:green
+}
